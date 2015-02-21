@@ -12,8 +12,7 @@ int main(void)
 	
 	int diff;
 	
-cycle:;	diff = 0;
-	for(int i=0; i<N-1; i++)
+cycle:;	for(int i=0; i<N-1; i++)
 	{
 		diff=0;
 		if(array[i] > array[i+1])
