@@ -16,7 +16,7 @@ cycle:;	int diff=0;
 		if(array[i] > array[i+1])
 		{
 			diff++;
-			unsigned char temp = array[i];
+			uint8_t temp = array[i];
 			array[i] = array[i+1];
 			array[i+1] = temp;
 		}
@@ -25,7 +25,6 @@ cycle:;	int diff=0;
 	
 	for(int i=0; i<N; i++) printf("%u ", array[i]);
 	
-	getchar();
 	free(array);
 	return 0;
 }
