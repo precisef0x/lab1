@@ -10,11 +10,9 @@ int main(void)
 	array = (uint8_t*) malloc(N*8);
 	for(int i=0; i<N; i++) scanf("%u", &array[i]);
 	
-	int diff;
-	
-cycle:;	for(int i=0; i<N-1; i++)
+cycle:;	int diff=0;
+	for(int i=0; i<N-1; i++)
 	{
-		diff=0;
 		if(array[i] > array[i+1])
 		{
 			diff++;
